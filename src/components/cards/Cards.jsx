@@ -26,15 +26,16 @@ const Cards = () => {
       selectActors.forEach((item) => {
          count = count + item.credit;
       })
-       const creditRemaining = count;
-       if(count > 20){
+       const creditRemaining =  20 - count;
+     
+       if(count> 20){
             return alert('credit not allow 20tk')
        }else{
             setRemaining(creditRemaining)
             setTotalCounts(count)
             setSelectActors([...selectActors, actor ])
        }
-     
+      
     }
  
  }
