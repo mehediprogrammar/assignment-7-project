@@ -52,7 +52,19 @@ display: grid;
 grid-template-columns: 1fr 1fr 1fr; /* Three equal-width columns */
 gap: 20px;
 
+
 }
 .creadit-container{
    width: 500px;
+  
+}
+.Hour-container{
+               width: 300px;
+               height: 350px;
+               background-color: white;
+               box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.3);
+             border-radius: 10px;
+             margin-left: 50px;
+       
+            
 }

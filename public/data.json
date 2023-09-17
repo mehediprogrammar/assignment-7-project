@@ -5,7 +5,7 @@
     "course_name": "Introduction to C Programming",
     "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "price": "$ 15000",
-    "credit": "1hr"
+    "credit": 1
   },
   {
     "id": "1",
@@ -13,7 +13,7 @@
     "course_name": "Introduction to Algorithms",
     "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "price": "$ 25000",
-    "credit": "2hr"
+    "credit": 2
   },
   {
     "id": "2",
@@ -21,7 +21,7 @@
     "course_name": "Introduction to C++ for DSA",
     "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "price": "$ 10000",
-    "credit": "10"
+    "credit": 10
   },
   {
     "id": "3",
@@ -29,7 +29,7 @@
     "course_name": "Basic Data Structures",
     "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "price": "$ 35000",
-    "credit": "5hr"
+    "credit": 5
   },
   {
     "id": "4",
@@ -37,7 +37,7 @@
     "course_name": "Introduction to OOP Python",
     "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "price": "$ 19000",
-    "credit": "5hr"
+    "credit": 7
   },
   {
     "id": "5",
@@ -45,7 +45,7 @@
     "course_name": "Software Engineering",
     "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "price": "$ 23000",
-    "credit": "5hr"
+    "credit": 8
   },
   {
     "id": "6",
@@ -53,7 +53,7 @@
     "course_name": "AWS, Cloud Computing",
     "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "price": "$35000",
-    "credit": "5hr"
+    "credit": 15
   },
   {
     "id": "8",
@@ -61,7 +61,7 @@
     "course_name": "Database (MySQL)",
     "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "price": "$ 35000",
-    "credit": "5hr"
+    "credit": 12
   },
   {
     "id": "9",
@@ -69,6 +69,6 @@
     "course_name": "Problem-Solving Part",
     "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "price": "$ 35000",
-    "credit": "5hr"
+    "credit": 16
   }
 ]

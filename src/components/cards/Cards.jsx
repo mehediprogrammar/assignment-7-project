@@ -6,13 +6,39 @@ import Creadit from '../creadit/Creadit';
 
 const Cards = () => {
    const [allActors, setAllActors] = useState([])
+   const [selectActors, setSelectActors] = useState([])
+   const [Remaining, setRemaining] = useState(0)
+   const [totalCounts, setTotalCounts] = useState(0)
 
  useEffect(()=>{
       fetch('./data.json')
       .then(res => res.json())
       .then(data => setAllActors(data))
  },[])
-console.log(allActors)
+
+ const handleAllActors = (actor) =>{
+      console.log(actor)
+    const isExite = selectActors.find((item) => item.id == actor.id);
+    let count = actor.credit;
+    if(isExite){
+      return alert('already booked')
+    }else{
+      selectActors.forEach((item) => {
+         count = count + item.credit;
+      })
+       const creditRemaining = count;
+       if(count > 20){
+            return alert('credit not allow 20tk')
+       }else{
+            setRemaining(creditRemaining)
+            setTotalCounts(count)
+            setSelectActors([...selectActors, actor ])
+       }
+     
+    }
+ 
+ }
+ console.log(selectActors)
       return (
 
             <div className='container'>
@@ -30,13 +56,13 @@ console.log(allActors)
                                           <p>price: {actor.price}</p>
                                           <p>credit: {actor.credit}</p>
                                     </div>
-                                    <button className='card-btn'>select</button>
+                                    <button onClick={()=>handleAllActors(actor) } className='card-btn'>select</button>
                               </div>
                               ))
                             }
                               </div>
                        <div className="creadit-container">
-                          <h3>Course Name</h3>
+                          <Creadit selectActors = {selectActors} Remaining={Remaining} totalCounts={totalCounts} ></Creadit>
                        </div>
                   </div>
 
